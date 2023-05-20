@@ -62,11 +62,11 @@ const Central = () => {
             onChange={handleLeagueChange}
           ></LeagueSelect>
         ) : (
-          <>
+          <div className="selecione">
             <h1>Selecione uma liga:</h1>
-            <p>Primeiro selecione um país...</p>
+            <p className="selecionePrimeiro">Primeiro selecione um país...</p>
             <select disabled placeholder="..."></select>
-          </>
+          </div>
         )}
         {/* Times */}
         {selectedLeague ? (
@@ -77,11 +77,11 @@ const Central = () => {
             onChange={handleTeamChange}
           ></TeamSelect>
         ) : (
-          <>
+          <div className="selecione">
             <h1>Selecione um time:</h1>
-            <p>Primeiro selecione uma liga...</p>
+            <p className="selecionePrimeiro">Primeiro selecione uma liga...</p>
             <select disabled placeholder="..."></select>
-          </>
+          </div>
         )}
       </div>
       {/* PlayersCards */}

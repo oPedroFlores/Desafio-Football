@@ -127,5 +127,6 @@
   text-align: center;
 }
 
-body{
+.selecionePrimeiro{
+  color: tomato;
 }
