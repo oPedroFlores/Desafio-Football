@@ -1,38 +1,131 @@
-.App {
+/* Login */
+.divForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.error{
+  background: #ccc;
+  color: red;
+  font-size: 1rem;
+  width: 200px;
+  height: 18px;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.inputLogin{
+  padding: 15px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttonLogin{
+  background: none;
+  border-radius: 4px;
+  padding: 15px;
+  border: 1px solid black;
+  margin-left: 15px;
+  cursor: pointer;
+  width: 75px;
+  font-size: .75rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Busca */
+
+.busca{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.busca div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:33%;
+}
+
+.busca select{
+  padding: 10px;
+  width: 250px;
+}
+
+
+/*PlayerList*/
+
+.playerList{
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/*PlayerCard*/
+.playerCard{
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 350px;
+  min-height: 155px;
+  max-height: 155px;
+  display: flex;
+}
+
+.playerCard p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.playerCard img{
+  max-width: 45%;
+  min-width: 45%;
+  transform: scale(.85);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.cardInfos{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.noLineup{
+  width: 100%;
+  font-size: 1.5rem;
+  height: 50px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.infos{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infos th{
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.infos td{
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+body{
 }
